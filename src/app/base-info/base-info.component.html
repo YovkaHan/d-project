@@ -1,0 +1,61 @@
+<div class={{core.classes}}>
+  <div class="container">
+    <div class="top-container">
+      <div class="image-container">
+        <div style="position: relative; display: inline-block; padding: 0px; margin: 0px;">
+          <img size="124"
+               src="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/b0/b0d41826657d0ac6a3c3f790ce1fc4b6c401ccae_full.jpg"
+               class="overviewAvatar"
+               style="color: rgb(46, 47, 64); background-color: rgb(100, 101, 113); user-select: none; display: inline-flex; align-items: center; justify-content: center; font-size: 62px; border-radius: 50%; height: 124px; width: 124px; margin-left: 30px; margin-right: 30px;">
+        </div>
+      </div>
+      <div class="player-info">
+        <div class="titleNameButtons">
+          <span class="player-info__name">клубочек счастья</span>
+        </div>
+        <div class="win-loss">
+          <div class="win-loss__container">
+            <div class="wins win-loss__item">
+              <span>Wins</span>
+              <span>{{wl? wl.win: "0"}}</span>
+            </div>
+            <div class="looses win-loss__item">
+              <span>Losses</span>
+              <span>{{wl? wl.lose: "0"}}</span>
+            </div>
+            <div class="winrate win-loss__item">
+              <span>Winrate</span>
+              <span>52.39%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="rank-tier">
+        <div class="rank-tier__medal medal"><img class="medal__icon"
+                                                 src="https://www.opendota.com/assets/images/dota2/rank_icons/rank_icon_4.png"
+                                                 alt="icon">
+          <img class="medal__star" src="https://www.opendota.com/assets/images/dota2/rank_icons/rank_star_5.png"
+               alt="star">
+        </div>
+      </div>
+    </div>
+    <div class="bottom-container">
+      <div class="routes">
+        <a class="route chosen" href="/players/{{player.accountId}}/overview">Overview</a>
+        <a class="route" href="/players/{{player.accountId}}/matches">Matches</a>
+        <a class="route" href="/players/{{player.accountId}}/heroes">Heroes</a>
+        <a class="route" href="/players/{{player.accountId}}/peers">Peers</a>
+        <a class="route" href="/players/{{player.accountId}}/pros">Pros</a>
+        <a class="route" href="/players/{{player.accountId}}/records">Records</a>
+        <a class="route" href="/players/{{player.accountId}}/totals">Totals</a>
+        <a class="route" href="/players/{{player.accountId}}/counts">Counts</a>
+        <a class="route" href="/players/{{player.accountId}}/histograms">Histograms</a>
+        <a class="route" href="/players/{{player.accountId}}/trends">Trends</a>
+        <a class="route" href="/players/{{player.accountId}}/wardmap">Wardmap</a>
+        <a class="route" href="/players/{{player.accountId}}/wordcloud">Wordcloud</a>
+        <a class="route" href="/players/{{player.accountId}}/mmr">MMR</a>
+        <a class="route" href="/players/{{player.accountId}}/rankings">Rankings</a>
+      </div>
+    </div>
+  </div>
+</div>
